@@ -1,0 +1,78 @@
+#
+#       @kimio_kosaka http://make.kosakalab.com
+#
+##################################################################
+
+menu.cpu=Processor
+menu.clock=Clock
+
+[CLASS].name=[DEVICE-NAME1]/[DEVICE-NAME2] 
+
+[CLASS].upload.tool=arduino:avrdude
+#[CLASS].upload.protocol=arduino
+#[CLASS].upload.speed=115200
+[CLASS].bootloader.unlock_bits=0xff
+[CLASS].bootloader.lock_bits=0xff
+[CLASS].bootloader.tool=arduino:avrdude
+[CLASS].bootloader.file=dummy.hex
+#[CLASS].build.core=
+#[CLASS].build.variant=
+[CLASS].build.board=AVR_[CLASS]
+
+##         [DEVICE-NAME1] 
+##----------------------------------------------------------------
+[CLASS].menu.cpu.[DEVICE1]=[DEVICE-NAME1]
+[CLASS].menu.cpu.[DEVICE1].upload.maximum_size=
+[CLASS].menu.cpu.[DEVICE1].upload.maximum_data_size=
+[CLASS].menu.cpu.[DEVICE1].build.mcu=[DEVICE1]
+[CLASS].menu.cpu.build.core=
+[CLASS].menu.cpu.[DEVICE1].build.variant=
+
+##         [DEVICE-NAME2]
+##----------------------------------------------------------------
+[CLASS].menu.cpu.[DEVICE2]=[DEVICE-NAME2]
+[CLASS].menu.cpu.[DEVICE2].upload.maximum_size=
+[CLASS].menu.cpu.[DEVICE2].upload.maximum_data_size=
+[CLASS].menu.cpu.[DEVICE2].build.mcu=[DEVICE2]
+[CLASS].menu.cpu.build.core=
+[CLASS].menu.cpu.[DEVICE1].build.variant=
+
+##        internal [CLOCK1]MHz
+##----------------------------------------------------------------
+[CLASS].menu.clock.internal-[CLOCK1]=[CLOCK1]MHz(Internal)
+[CLASS].menu.clock.internal-[CLOCK1].bootloader.low_fuses=
+[CLASS].menu.clock.internal-[CLOCK1].bootloader.high_fuses=
+[CLASS].menu.clock.internal-[CLOCK1].bootloader.extended_fuses=
+[CLASS].menu.clock.internal-[CLOCK1].build.f_cpu=[CLOCK1]000000L
+
+##        internal [CLOCK2]MHz
+##----------------------------------------------------------------
+[CLASS].menu.clock.internal-[CLOCK2]=[CLOCK2]MHz(Internal)
+[CLASS].menu.clock.internal-[CLOCK2].bootloader.low_fuses=
+[CLASS].menu.clock.internal-[CLOCK2].bootloader.high_fuses=
+[CLASS].menu.clock.internal-[CLOCK2].bootloader.extended_fuses=
+[CLASS].menu.clock.internal-[CLOCK2].build.f_cpu=[CLOCK2]000000L
+
+##        ---------------
+##----------------------------------------------------------------
+[CLASS].menu.clock.internal-dash=---------------
+[CLASS].menu.clock.internal-dash.bootloader.low_fuses=
+[CLASS].menu.clock.internal-dash.bootloader.high_fuses=
+[CLASS].menu.clock.internal-dash.bootloader.extended_fuses=
+[CLASS].menu.clock.internal-dash.build.f_cpu=1000000L
+
+##        external [CLOCK3]MHz
+##----------------------------------------------------------------
+[CLASS].menu.clock.external-[CLOCK3]=External([CLOCK3]MHz)
+[CLASS].menu.clock.external-[CLOCK3].bootloader.low_fuses=
+[CLASS].menu.clock.external-[CLOCK3].bootloader.high_fuses=
+[CLASS].menu.clock.external-[CLOCK3].bootloader.extended_fuses=
+[CLASS].menu.clock.external-[CLOCK3].build.f_cpu=[CLOCK3]000000L
+
+##        external [CLOCK4]MHz
+##----------------------------------------------------------------
+[CLASS].menu.clock.external-[CLOCK4]=External([CLOCK4]MHz)
+[CLASS].menu.clock.external-[CLOCK4].bootloader.low_fuses=
+[CLASS].menu.clock.external-[CLOCK4].bootloader.high_fuses=
+[CLASS].menu.clock.external-[CLOCK4].bootloader.extended_fuses=
+[CLASS].menu.clock.external-[CLOCK4].build.f_cpu=[CLOCK4]000000L
