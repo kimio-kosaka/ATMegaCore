@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/kimio-kosaka/ATMegaCore/archive/v1.0.0.tar.gz",
           "archiveFileName": "ATMegaCore-1.0.0.tar.gz",
-          "checksum": "SHA-256:",
-          "size": "",
+          "checksum": "SHA-256:6cbfe1424711fd7b214e1edfcf283b0c402c29c08ac3864dcd64c980b739c9f5",
+          "size": "114122",
           "boards": [
             {"name": "ATmega88"},
             {"name": "ATmega168"},
