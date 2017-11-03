@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "ATMegaCore-R",
+          "name": "ATMegaCore",
           "architecture": "avr",
           "version": "1.0.0",
           "category": "Contributed",
@@ -18,7 +18,7 @@
             "online": ""
           },
           "url": "https://github.com/kimio-kosaka/ATMegaCore/archive/v1.0.0.tar.gz",
-          "archiveFileName": "ATMegaCore-R-1.0.0.tar.gz",
+          "archiveFileName": "ATMegaCore-1.0.0.tar.gz",
           "checksum": "SHA-256:",
           "size": "",
           "boards": [
